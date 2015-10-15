@@ -1,0 +1,19 @@
+<div id="header">
+	<a href="index.php"><img class="logo" src="images/logo.gif"></a>
+	<h1 class="title2">金陵贸易有限公司</h1>
+	<div class="menu">
+		<a href=""class="sheshou">设为首页</a>
+		<a href="" class="shoucan">收藏本站</a>
+	</div>
+	<div class="head">
+		<div class="head_left"></div>
+		<div class="head_center">
+			<ul> 
+			<{foreach $pnav_data as $key=>$value}>
+				<li class="shouye"><a href="<{$value['nav_url']}>"><{$value['nav_name']}></a></li>
+			<{/foreach}>
+			</ul>
+			<div class="time" id="showTime">&nbsp;</div>
+		</div>
+	<div class="head_right"></div>
+</div>

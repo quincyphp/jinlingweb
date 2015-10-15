@@ -1,0 +1,75 @@
+﻿
+.article p{
+	font-size:14px;
+	text-indent:2em;
+	padding-top:40px;
+	width:465px;
+}
+.main_left .picList li{
+	float:left;
+	width:160px;
+}
+.main_left .picList span{
+	margin-left:41px;
+}
+.picList img{
+	padding-top:9px;
+}
+.picList{
+	width:540px;
+	padding-top:6px;
+}
+.main_right .kongge2{
+	width:183px;
+	height:27px;
+	background:none;
+	border:none;
+	border-bottom:1px solid #ccc;
+}
+.new_title{ line-height:30px; }
+.new_title li{
+	background:url(../images/right_tiao.jpg ) no-repeat 0% 48%;
+	margin-left:10px;
+	font-size:14px;
+	text-indent:12px;
+}
+.new_title span{ float:right; }
+.link{
+	margin-top:20px;
+	padding-bottom:40px;
+}
+.link li{
+	float:left;
+	border:1px solid #ccc;
+	line-height:26px;
+	padding-left:12px;
+	background:url(../images/t_b_l_bg.gif) repeat-x;
+}
+.link .youqin {
+	border-right:none;
+	color:#3366cc;
+}
+.link .link2{
+	color:#999;
+	border-left:none;
+	padding-left:8px;
+	width:53px;
+}
+.link .no-background5 {
+	background:none;
+	border:none;
+	width:755px;
+	height:27px;
+	border-bottom:1px solid #ccc;
+}
+.link .two{
+	width:755px;
+	margin-left:15px;
+	padding-top:36px;
+}
+.link .two a{
+	padding-left:12px;
+}
+.link .two span{
+	padding-left:12px;
+}

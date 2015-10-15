@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>contact</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css ">
+</head>
+<body>
+	<{include file="header.html"}> <{*加载头部内容*}>
+	<div id="clear"></div>
+	<div id="guanggao">
+		<img src="images/guanggao_bg.gif"/>
+	</div>
+	<div id="main">
+		<div class="main_left">
+			<ul class="article">
+				<li class="cp">联系我们</li>
+				<li class="about">Contact us</li>
+				<li class="kongge">&nbsp;</li>
+			</ul>
+			<div id="clear"></div>
+			<form class="detail">
+				<table>
+					<tr>
+						<td align="right">地址：</td>
+						<td><{$company['company_address']}></td>
+					</tr>
+					<tr>
+						<td align="right">联系人:</td>
+						<td><{$company['company_linkman']}></td>
+					</tr>
+					<tr>
+						<td align="right">移动电话:</td>
+						<td><{$company['company_mobile']}></td>
+					</tr>
+					<tr>
+						<td align="right">固定电话:</td>
+						<td><{$company['company_phone']}></td>
+					</tr>
+					<tr>
+						<td align="right">传真:</td>
+						<td><{$company['company_fax']}></td>
+					</tr>
+				</table>
+			</form>
+			<ul class="article">
+				<li class="cp">我的位置</li>
+				<li class="about">map</li>
+				<li class="kongge">&nbsp;</li>
+			</ul>
+			<img src="<{$company['company_map']}>" alt="" id="photo" />
+		</div>
+		<div class="main_right">
+			<div class="message">
+				<h1>我要留言</h1>
+			</div>
+			<div id="clear"></div>
+			<div class="new_ad" >
+				<ul class="ad">
+					<li class="new">最新公告</li>
+					<li class="news">New</li>
+				</ul>
+				<ul class="title259" >
+					<{foreach $new_info as $key=>$value}>
+					<li><a href=""><{$value['title']}></a></li>
+					<{/foreach}>
+				</ul>
+			</div>
+			<div id="clear"></div>
+			<div class="new_ad" >
+				<ul class="ad">
+					<li class="new">友情链接</li>
+					<li class="news">Links</li>
+				</ul>
+				<ul class="title259" >
+				<{foreach $link as $key=>$value}>
+					<li><a href=""><{$value['link_name']}></a></li>
+				<{/foreach}>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="clear"></div>
+	<{include file="footer.html"}> <{*加载底部内容*}>
+	<script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>

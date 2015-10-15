@@ -1,0 +1,59 @@
+#main {
+	width:915px;
+	margin:0px auto;
+	background:url(../images/main_bg.gif) repeat-x;
+}
+#main .main_left{
+	padding-top:12px;
+	margin-left:10px;
+}
+.t_b_tou{
+	width:800px;
+}
+.t_b_tou li{
+	float:left;
+	line-height:26px;
+	padding-left:12px;
+	background:url(../images/t_b_l_bg.gif) repeat-x;
+}
+.color_bg{
+	color:#3366cc;
+	border-right:none;
+}
+ .color_bg2{
+	color:#999999;
+	border-left:none;
+	padding-left:0px;
+}
+.t_b_tou .no-background{
+	background:none;
+	border-bottom:1px solid #ccc;
+    width:450px;
+}
+.position_left {
+	position:relative;
+	float:right;
+	border:2px solid #ccc;
+	width:216px;
+	height:41px;
+	top:-194px;
+	right:17px;
+	background:url(../images/position_bg3.gif ) repeat-x;
+}
+.t_b_tou3{
+	float:left;
+	width:230px;
+}
+.t_b_tou3 li{
+	float:left;
+	line-height:43px;
+	padding-left:12px;
+	background:url(../images/position_bg3.gif) repeat-x;
+}
+.t_b_biao2  li{
+	background:url(../images/right_tiao.jpg ) no-repeat 1% 82%;
+	margin-left:10px;
+	font-size:14px;
+	text-indent:12px;
+	border-bottom:1px dashed #ccc;
+}

@@ -1,0 +1,232 @@
+﻿/**css样式**/
+@charset "utf-8";
+body,div,span,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,table,th,td,a{ margin:0px; padding:0px; font-size:15px; font-family:"微软雅黑"; color:#000; border:none; }
+ul li{ list-style-type:none; }
+a{ text-decoration:none; }
+img{ border:none; }
+#clear{ clear:both; }
+a:link {color:#180808; text-decoration:none;}
+a:visited {color:#180808; text-decoration:none;}
+a:hover {color: #0033ff; text-decoration:underline;}
+a:active {color: #0033ff;}
+body{ width:1024px; margin:0px auto; background:url(../images/logo_bg2.gif) repeat-x; }
+/**导航css样式**/
+#header {
+	width:1024px;
+	margin:0px auto;
+}
+#header .logo{
+	margin-top:13px;
+	margin-left:19px;
+}
+#header .title2{　color:blue; font-size:25px; margin-top:-34px; margin-left:66px; }
+#header .menu{
+	float:right;
+	margin-top:-16px;
+}
+.sheshou{
+	background:url(../images/sheshou.gif) no-repeat 0% 76%;
+	text-indent:20px;
+	float:left;
+	margin-right:33px;
+}
+.shoucan{
+	background:url(../images/shoucan.gif) no-repeat 0% 74%;
+	text-indent:22px;
+	float:left;
+}
+.head ul li a:link,.head ul li a:visited,.head ul li a:active{color:#fff;text-decoration:none}
+.head ul li a:hover{color:#98ff66;text-decoration:none;}
+#header .head{
+	margin-top:12px;
+}
+.head_left{
+	background:url(../images/head_left.gif) no-repeat;
+	width:2px;
+	height:31px;
+	float:left;
+}
+.head_center{
+	float:left;
+	background:url(../images/head_center.gif) repeat-x;
+	width:1020px;
+	height:31px;
+}
+.head_center li{
+	float:left;
+	margin-left:22px;
+	line-height:30px;
+	background:url(../images/head_tiao.gif) no-repeat 0% 58%;
+	text-indent:20px;
+}
+.head_center .shouye{
+	color:#99ff66;
+	background:none;
+}
+.head_center a:hover{
+	color:#99ff66;
+}
+.time{ float:right; background:url(../images/shizhong.gif) no-repeat 0% 68%; margin:0 8px; line-height: 27px; text-indent: 21px; color:#fff; }
+.head_right{
+	background:url(../images/head_right.gif) no-repeat;
+	width:2px;
+	height:31px;
+	float:left;
+}
+/**广告css样式**/
+#guanggao img{
+	width:1024px;
+	margin:0px auto;
+	margin-top:2px;
+}
+/**内容css**/
+#main {
+	width:1024px;
+	margin:0px auto;
+	float:left;
+	margin-top:3px;
+	background:url(../images/main_bg.gif) repeat-x;
+}
+/**左边公共css样式**/
+#main .main_left{
+	width:465px;
+	float:left;
+	padding-top:20px;
+	margin-left:35px;
+}
+#photo{ margin:8px 0px;}
+/**标题css**/
+.article{
+	width:514px;
+	padding-top:6px;
+}
+.article li{
+	float:left;
+	border:1px solid #ccc;
+	line-height:26px;
+	padding-left:12px;
+	background:url(../images/t_b_l_bg.gif) repeat-x;
+}
+.article .cp{
+	color:#3366cc;
+	border-right:none;
+}
+.article .about{
+	width:89px;
+	color:#999999;
+	border-left:none;
+	padding-left:8px;
+}
+.article .kongge{
+	background:none;
+	border:none;
+	border-bottom:1px solid #ccc;
+	width:286px;
+	height:27px;
+}
+.detail{
+	padding-top:20px; line-height:30px; margin-left:12px; margin-bottom:20px;
+}
+.detail td{ padding-left:12px; }
+/**右边公共css样式**/
+#main .main_right{
+	float:right;
+	margin:28px;
+	width:250px;
+}
+/**留言 css */
+.message{
+	width:214px;
+	padding-left:19px;
+	background:url(../images/position_bg3.gif ) repeat-x;
+}
+.message h1{
+	color:#668dd9;
+	line-height:41px;
+	font-size:22px;
+	background:url(../images/liuyan.gif) no-repeat;
+	text-indent:60px;
+}
+
+.new_ad{
+	width:229px;
+	border:2px solid #ccc;
+	margin-top:8px;
+	height:160px;
+}
+.ad .new{
+	color:#3366cc;
+	border-right:none;
+}
+.ad .news{
+	color:#999999;
+	border-left:none;
+	padding-left:8px;
+	width:149px;
+}
+.ad{
+	float:left;
+	width:230px;
+}
+.ad li{
+	float:left;
+	line-height:43px;
+	padding-left:12px;
+	background:url(../images/position_bg3.gif) repeat-x;
+}
+.title259 li{
+	line-height:30px;
+	background:url(../images/right_tiao.jpg ) no-repeat 0% 81%;
+	margin-left:12px;
+	text-indent:20px;
+	width:200px;
+	border-bottom:1px dashed #ccc;
+}
+form table{margin-top:20px; }
+td input,td textarea{ border:2px solid #ccc; margin:4px 18px;}
+#submit{ margin-top:6px; color:blue; background:#d0edff; width:86px; height:26px;}
+
+.page { margin-top:30px; }
+/**flash css */
+.flash li {
+	background:url(../images/right_tiao.jpg) no-repeat 0% 50%;
+	line-height:25px;
+	width:557px;
+	border-bottom:1px dashed #ccc;
+	margin-left:7px;
+	margin-top:12px;
+	text-indent:15px;
+}
+.flash span{ float:right; margin-right:10px; }
+/**pro css**/
+.Product li{
+	float:left;
+	margin-left:14px;
+	margin-top:12px;
+	width:140px;
+}
+.Product span{
+	margin-left:46px;
+}
+/**公司介绍css**/
+.introduce { width:610px; }
+.introduce img{ float:left; margin-top:5px; margin-right:15px; }
+.introduce li{ margin-top:20px; }
+.introduce p{ text-indent:2em; }
+/**底部 css**/
+.footer{
+	width:1024px;
+	margin:0 auto;
+	border-top:6px solid #5678fe; 
+	text-align:left; 
+	color:#666;
+	padding:16px 0 30px 16px;
+	position: relative;
+	margin:40px 0;
+}
+.footer .qqImg{
+	float:right;
+	position: absolute;
+	right: 0;top: 10px;
+}

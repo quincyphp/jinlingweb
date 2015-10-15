@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<!--关键字、描述-->
+	<meta name="keywords" content="<{$company['company_keywords']}>" />
+    <meta name="description" content="<{$company['company_description']}>" />
+	<title><{$company['company_name']}></title>
+	<link rel="stylesheet" type="text/css" href="css/index.css ">
+	<link rel="stylesheet" type="text/css" href="css/common.css ">
+	<link rel="stylesheet" type="text/css" href="css/pro.css ">
+</head>
+<body>
+	<{include file="header.html"}> <{*加载头部内容*}>
+	<div id="clear"></div>
+	<div class="imgbox">
+	<ul id="imgshow">
+	<{foreach $banner_info as $key=>$value}>
+		<li><img src="<{$value['ad_imgurl']}>" /></li>
+	<{/foreach}>
+	</ul>
+	</div>
+	<div class="changeimg">
+		<ul id="change">
+			<li onmouseover="changeimg(0,'stop')" onmouseout="runshowimg(1)"><a href="javsscript:void(0)">1</a></li>
+			<li onmouseover="changeimg(1,'stop')" onmouseout="runshowimg(2)"><a href="javsscript:void(0)">2</a></li>
+			<li onmouseover="changeimg(2,'stop')" onmouseout="runshowimg(3)"><a href="javsscript:void(0)">3</a></li>
+			<li onmouseover="changeimg(3,'stop')" onmouseout="runshowimg(4)"><a href="javsscript:void(0)">4</a></li>
+		</ul>
+	</div>
+	<div id="main">
+		<div class="main_left">
+			<ul class="article">
+				<li class="cp">公司简介</li>
+				<li class="about">About us</li>
+				<li class="kongge">&nbsp;</li>
+			
+				<p><{$about_info['about_us']}>
+				<a href="http://www.baidu.com" style="color:blue;">查看更多</a></p>
+			</ul>
+			<ul class="article">
+				<li class="cp">产品展示</li>
+				<li class="about">products</li>
+				<li class="kongge">&nbsp;</li>
+			</ul>
+			<div class="picScroll-left">
+				<div class="hd">
+					<a class="next"></a>
+					<ul></ul>
+					<a class="prev"></a>
+					<span class="pageState"></span>
+				</div>
+				<div class="bd">
+					<ul class="picList">
+						<{foreach $pro_info as $key=>$value}>
+						<li>
+							<div class="pic"><a href="" target="_blank"><img src="<{$value['product_imgurl']}>" alt="" /></a></div>
+							<div class="title"><a href="" target="_blank"><{$value['product_name']}></a></div>
+						</li>
+						<{/foreach}>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main_right"style="width:364px;">
+			<ul class="article">
+				<li class="cp">最新公告</li>
+				<li class="about">New</li>
+				<li class="kongge2">&nbsp;</li>
+			</ul>
+			<div id="clear"></div>
+			<ul class="new_title" >
+			<{foreach $new_info as $key=>$value}>
+				<li><a href=""><{$value['title']}></a><span><{date('Y-m-d',$value['add_time'])}></span></li>
+			<{/foreach}>
+			</ul>
+			<div id="clear"></div>
+			<ul class="article">
+				<li class="cp">行业知识</li>
+				<li class="about">Knowleage</li>
+				<li class="kongge2">&nbsp;</li>
+			</ul>
+			<div id="clear"></div>
+			<ul class="new_title" >
+				<{foreach $new_info as $key=>$value}>
+				<li><a href=""><{$value['title']}></a><span><{date('Y-m-d',$value['add_time'])}></span></li>
+			<{/foreach}>
+			</ul>
+		</div>
+		<div id="clear"></div>
+		<ul class="link">
+			<li class="youqin">友情链接</li>
+			<li class="link2">Link2</li>
+			<li class="no-background5">&nbsp;</li>
+			<p class="two">
+			<{foreach $link as $key=>$value}>
+				<a href=""><{$value['link_name']}></a><span>|</span>
+			<{/foreach}>
+			</p>
+		</ul>
+	</div>
+	<div id="clear"></div>
+	<{include file="footer.html"}> <{*加载底部内容*}>
+</body>
+	<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript" src="js/num.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+</html>
